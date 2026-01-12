@@ -3,63 +3,151 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Il mio primo sito</title>
+    <title>Il mio portfolio</title>
+
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
-            padding: 0;
+            background-color: #f4f4f4;
         }
-        header {
-            background-color: #0077cc;
-            color: white;
-            padding: 1em;
+
+        /* HEADER */
+        .header {
             text-align: center;
         }
-        nav {
-            background-color: #005fa3;
-            padding: 0.5em;
-            text-align: center;
+
+        .main-img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            display: block;
         }
-        nav a {
-            color: white;
-            margin: 0 1em;
-            text-decoration: none;
+
+   
+        .layout {
+            max-width: 900px;
+            margin: 40px auto 0;
+            padding: 20px;
+        }
+
+        .box {
+            background: white;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+        }
+
+        h1 {
+            text-align: center;
+            margin: 30px 0 0;
+            font-size: 3em;
+        }
+
+        h2 {
+            margin-top: 0;
+            color: #0077cc;
+        }
+
+        .project {
+            padding: 10px 0;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .project:last-child {
+            border-bottom: none;
+        }
+
+        .project-title {
             font-weight: bold;
         }
-        main {
-            padding: 2em;
+
+        .project-meta {
+            font-size: 0.9em;
+            color: #555;
         }
+
+        .project-meta a {
+            color: #0077cc;
+            text-decoration: none;
+            margin-right: 10px;
+        }
+
+        .project-meta a:hover {
+            text-decoration: underline;
+        }
+
+
         footer {
+            text-align: center;
+            padding: 15px;
             background-color: #333;
             color: white;
-            text-align: center;
-            padding: 1em;
-            margin-top: 2em;
+            margin-top: 30px;
         }
     </style>
 </head>
+
 <body>
 
-    <header>
-        <h1>Benvenuto nel mio sito!</h1>
-    </header>
 
-    <nav>
-        <a href="#">Home</a>
-        <a href="#">Chi siamo</a>
-        <a href="#">Servizi</a>
-        <a href="#">Contatti</a>
-    </nav>
+    <div class="header">
+        <img src="img1.png" class="main-img" alt="Immagine principale">
+    </div>
 
-    <main>
-        <h2>Questa è la pagina principale</h2>
-        <p>Questo è un semplice sito creato con HTML e un po' di CSS.</p>
-        <p>Puoi personalizzarlo aggiungendo altre pagine, immagini, o funzionalità interattive con JavaScript.</p>
+    <h1>PORTFOLIO</h1>
+
+
+    <main class="layout">
+
+        <div class="box">
+            <h2>Progetti</h2>
+
+            <div class="project">
+                <div class="project-title">Progetto 1 — es-2024-25</div>
+                <div class="project-meta">
+                    <a href="es-2024-25">Link</a>
+                </div>
+            </div>
+
+            <div class="project">
+                <div class="project-title">Progetto 2 — first-splash</div>
+                <div>Number Guesser</div>
+                <div class="project-meta">
+                    <a href="first-splash">Link</a>
+                </div>
+            </div>
+
+            <div class="project">
+                <div class="project-title">Progetto 3 — Silly story generator</div>
+                <div>Versione 4 </div>
+                <div class="project-meta">
+                    <a href="silly-story-generator">Link</a>
+                </div>
+            </div>
+
+            <div class="project">
+                <div class="project-title">Progetto 4 — Image gallery</div>
+                <div>Versione 2 </div>
+                <div class="project-meta">
+                    <a href="Gallery">Link</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="box">
+            <h2>Verifiche</h2>
+            <div class="project">
+                <div class="project-title">JS Testo</div>
+                <div class="project-meta">VERIFICA JS</div>
+                <a href="Verifica JS pratica">Link</a>
+            </div>
+        </div>
+
     </main>
 
     <footer>
-        &copy; 2025 Il mio sito web. Tutti i diritti riservati.
+        © 2026 - Il mio portfolio
     </footer>
 
 </body>
